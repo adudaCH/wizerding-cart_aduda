@@ -1,0 +1,86 @@
+h1, thead, tbody{
+font-family:"LUMOS";
+}
+h1{
+    color: white;
+    font-size: 5em;
+}
+body{
+    background-image: url("./HP_bgc.jpg");
+    height:100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* ---------------------------------- */
+
+.form-group {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+
+.form {
+    --border-height: 1px;
+    --border-before-color: rgba(221, 221, 221, 0.39);
+    --border-after-color: #f3ab46;
+    --input-hovered-color: #e0c4491f;
+    position: relative;
+    width: var(--width-of-input);
+}
+
+.input {
+    color: #fff;
+    font-size: 0.9rem;
+    background-color: transparent;
+    width: 100%;
+    box-sizing: border-box;
+    padding-inline: 0.5em;
+    padding-block: 0.7em;
+    border: none;
+    border-bottom: var(--border-height) solid var(--border-before-color);
+}
+
+.input-border {
+    position: absolute;
+    background: var(--border-after-color);
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+}
+
+input:hover {
+    background: var(--input-hovered-color);
+}
+
+input:focus {
+    outline: none;
+}
+
+input:focus~.input-border {
+    width: 100%;
+}
+input::placeholder{
+    color: #fff;
+    font-weight: bold;
+}
+.table{
+    align-items: center;
+}
+button{
+    height: 3em;
+    color: black;
+}
+button:hover{
+background-color: #a56222;
+font-family: "LUMOS";
+}
+
+@media(max-width:567px) {
+    h1{
+        font-size: 2rem;
+    }
+}
